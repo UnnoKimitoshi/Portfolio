@@ -1,0 +1,40 @@
+body {
+    font-size: 18px;
+}
+
+.header {
+    display: flex;
+    padding: 1rem;
+}
+.header-brand {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.header-items {
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+}
+.header-item {
+    font-weight: bold;
+    margin-right: 1.5rem;
+}
+
+.box {
+    background-color: #e2e2e2;
+    padding-bottom: 2rem;
+}
+.box-title {
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+.box-body {
+    margin-top: 2rem;
+}
+.box-content {
+    margin-bottom: 0.5rem;
+}
+.box-headline {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
