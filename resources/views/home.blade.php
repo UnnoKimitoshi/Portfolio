@@ -23,7 +23,7 @@
                 ランキング機能のサーバーをlaravelで作成しました。
             </div>
             <br>
-            <div><a href="#">>>ゲームページ</a></div>
+            <div><a href="{{route('Unity_Damacy')}}">>>ゲームページ</a></div>
             <div>
                 <a href="https://github.com/UnnoKimitoshi/UnityDamacy">
                     >>ソースコード(github)

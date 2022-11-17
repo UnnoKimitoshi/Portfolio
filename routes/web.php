@@ -28,7 +28,7 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('/home', function () {
         return view('home');
     })->name('home');
-    // Route::get("/Unity_Damacy", function () {
-    //     return view('Unity_Damacy');
-    // });
+    Route::get("/Unity_Damacy", function () {
+        return view('Unity_Damacy');
+    })->name('Unity_Damacy');
 });
