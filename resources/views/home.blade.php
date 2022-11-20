@@ -1,9 +1,20 @@
 @extends("layouts.layout")
+@section("title", "ポートフォリオ一覧")
 @section("content")
+<div class="box row">
+    <div class="content">
+        <div class="box-headline">・まえがき</div>
+        <div class="box-text">
+            ご覧いただきありがとうございます。<br>
+            これまでに作成したモノ、勉強したことを逆時系列順でまとめました。
+        </div>
+    </div>
+</div>
 <div class="box row">
     <div class="col-lg-6">
         <div class="box-title">・Unity魂</div>
-        <img src="images/UnityDamacy.png" alt="" style="width:100%">
+        <img class="box-image" src="images/UnityDamacy.png" alt="" width="100%">
+        <video class="box-video" controls src="videos/katamari_demo.mp4" width="100%"></video>
     </div>
     <div class="box-body col-lg-6">
         <div class="box-content">
@@ -18,17 +29,25 @@
             <div class="box-headline">説明</div>
             <div class="box-text">
                 塊魂を参考にしてUnityでゲームを作りました。
-                球を操作してオブジェクトを吸収して大きくするゲームです。
                 プレイヤーが操作する球をBlenderで作成し、
                 ランキング機能のサーバーをlaravelで作成しました。
             </div>
-            <br>
-            <div><a href="{{route('Unity_Damacy')}}">>>ゲームページ</a></div>
-            <div>
-                <a href="https://github.com/UnnoKimitoshi/UnityDamacy">
-                    >>ソースコード(github)
-                </a>
+        </div>
+        <div class="box-content">
+            <div class="box-headline">ゲーム内容、操作説明</div>
+            <div class="box-text">
+                モノを吸収して球を大きくしていくゲームです。<br>
+                &emsp;キーボードのA,W,S,Dで球の操作、マウスでカメラの操作が行なえます。
+                画面左下の歯車ボタンで音量調節、リロードボタンでリトライができます。<br>
+                &emsp;右上のタイマーが0になる前に、左上のサイズが目標である5m以上になればゲームクリアです。<br>
+                &emsp;ランキングで10位以内にランクイン出来れば、名前と共にスコアを保存することができます。
             </div>
+        </div>
+        <div><a href="{{route('Unity_Damacy')}}">>>ゲームページ</a></div>
+        <div>
+            <a href="https://github.com/UnnoKimitoshi/UnityDamacy">
+                >>ソースコード(github)
+            </a>
         </div>
     </div>
 </div>
@@ -36,7 +55,7 @@
 <div class="box row">
     <div class="col-lg-6">
         <div class="box-title">・Web作成</div>
-        <img src="https://placeimg.com/900/500/any" alt="" style="width:100%">
+        <img class="box-image" src="images/web.jpg" alt="" style="width:100%">
     </div>
     <div class="box-body col-lg-6">
         <div class="box-content">
@@ -50,14 +69,14 @@
         <div class="box-content">
             <div class="box-headline">説明</div>
             <div class="box-text">
-                この頃より本格的にプログラマーとしての就職を考えるようになり求人が多く、
+                本格的にプログラマーとしての就職を考えるようになり求人が多く、
                 また、ポートフォリオの提示場所も兼ねてWeb系の勉強を始めました。<br>
-                &emsp;このサイトはLaravelで作成しAmazon EC2インスタンスにデプロイしています。
+                &emsp;このサイトはLaravelで作成しAWS EC2インスタンスにデプロイしています。<br>
+                &emsp;画像はASP.NETでECサイトのようなものを作成したときのものです。
             </div>
-            <br>
             <div>
                 <a href="https://github.com/UnnoKimitoshi/Portfolio">
-                    >>このページのソースコード(github)
+                    >>このWebのソースコード(github)
                 </a>
             </div>
         </div>
@@ -66,8 +85,8 @@
 
 <div class="box row">
     <div class="col-lg-6">
-        <div class="box-title">・Otaku Database（画面右上）</div>
-        <img src="images/otakuDatabase.gif" alt="" style="width:100%">
+        <div class="box-title">・Otaku Database（画像右上）</div>
+        <img class="box-image" src="images/otakuDatabase.gif" alt="" style="width:100%">
     </div>
     <div class="box-body col-lg-6">
         <div class="box-content">
@@ -96,8 +115,7 @@
 <div class="box row">
     <div class="col-lg-6">
         <div class="box-title">・BlenderでのCG作成</div>
-        <img src="images/CG.png" alt="" style="width:100%">
-        <video class="box-video" controls src="videos/CGmatome.mp4" width="100%"></video>
+        <video class="box-video" controls src="videos/CGmatome.mp4" poster="images/CG.png" width="100%"></video>
     </div>
     <div class="box-body col-lg-6">
         <div class="box-content">
@@ -122,7 +140,7 @@
 <div class="box row">
     <div class="col-lg-6">
         <div class="box-title">Unityでのゲーム作成</div>
-        <img src="images/games.png" alt="" style="width:100%">
+        <img class="box-image" src="images/games.png" alt="" style="width:100%">
     </div>
     <div class="box-body col-lg-6">
         <div class="box-content">
@@ -136,11 +154,11 @@
         <div class="box-content">
             <div class="box-headline">説明</div>
             <div class="box-text">
-                オリジナルのゲームを作りたいと思い、Unityでゲーム作成を始めました。
-                チュートリアルレベルのものばかりですが、画像右の
+                オリジナルのゲームを作りたいと思い、Unityでゲーム作成を始めました。<br>
+                &emsp;チュートリアルレベルのものばかりですが、画像右の
                 「数独」と「マインスイパー」とを組み合わせそこに「お絵かきロジック」式の
-                ヒントを加えたパズルはオリジナリティのあるものだったと思います。
-                しかしながら問題を解いていく中で途中から作業感が出てしまい、オリジナリティがありかつ、
+                ヒントを加えたパズルはオリジナリティのあるものだったと思います。<br>
+                &emsp;しかしながら問題を解いていく中で途中から作業感が出てしまい、オリジナリティがありかつ、
                 面白いゲームを作ることの難しさを実感しました。
             </div>
         </div>

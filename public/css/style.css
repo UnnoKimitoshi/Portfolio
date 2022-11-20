@@ -1,14 +1,27 @@
 body {
     font-size: 17px;
+    background-color: #dbdbdb;
 }
 
 .header {
     display: flex;
-    padding: 1rem;
+    margin: 1rem 0;
+    padding: 1rem 1rem;
+    background-color: #ffffff;
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    margin-right: calc(-0.5 * var(--bs-gutter-x));
+    margin-left: calc(-0.5 * var(--bs-gutter-x));
+    border-radius: 10px;
 }
 .header-brand {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: bold;
+    text-decoration: none;
+    color: #000000;
+}
+.header-brand:hover:visited {
+    color: inherit;
 }
 .header-items {
     display: flex;
@@ -21,17 +34,16 @@ body {
 }
 
 .box {
-    background-color: #ebebeb;
+    background-color: #ffffff;
     margin-bottom: 1.5rem;
-    padding: 1rem;
+    padding: 1rem 2rem;
+    border-radius: 10px;
 }
 .box-title {
     font-size: 1.7rem;
     font-weight: bold;
 }
-.box-video {
-    margin-top: 1rem;
-}
+
 .box-body {
     margin-top: 2rem;
 }
@@ -44,4 +56,14 @@ body {
 }
 .box-text {
     text-indent: 1rem;
+}
+.box-video {
+    padding-top: 1rem;
+}
+.box-image {
+    padding-top: 1rem;
+}
+
+.back_btn {
+    float: right;
 }
