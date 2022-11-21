@@ -45,7 +45,7 @@
         </div>
         <div><a href="{{route('Unity_Damacy')}}">>>ゲームページ（PC専用）</a></div>
         <div>
-            <a href="https://github.com/UnnoKimitoshi/UnityDamacy">
+            <a href="https://github.com/UnnoKimitoshi/Unity_Damacy">
                 >>自作したスクリプト(github)
             </a>
         </div>

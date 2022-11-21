@@ -1,6 +1,6 @@
 <IfModule mod_mime.c>
     # The following lines are required for builds without decompression fallback, compressed with gzip
-    RemoveType .gz
+    RemoveT ype .gz
     AddEncoding gzip .gz
     AddType application/octet-stream .data.gz
     AddType application/wasm .wasm.gz
@@ -15,6 +15,7 @@
     AddType application/wasm .wasm.br
     AddType application/javascript .js.br
     AddType application/octet-stream .symbols.json.br
+    
 
     # The following line improves loading performance for uncompressed builds
     AddType application/wasm .wasm
