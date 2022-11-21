@@ -6,20 +6,22 @@
 @section("content")
 
 <body>
-  <div id="unity-container" class="unity-desktop">
-    <canvas id="unity-canvas" width=960 height=600></canvas>
-    <div id="unity-loading-bar">
-      <div id="unity-logo"></div>
-      <div id="unity-progress-bar-empty">
-        <div id="unity-progress-bar-full"></div>
+  <div class="box" height="100%" style="display: flex; justify-content: center;">
+    <div id=" unity-container" class="unity-desktop">
+      <canvas id="unity-canvas" width=960 height=600></canvas>
+      <div id="unity-loading-bar">
+        <div id="unity-logo"></div>
+        <div id="unity-progress-bar-empty">
+          <div id="unity-progress-bar-full"></div>
+        </div>
       </div>
-    </div>
-    <div id="unity-warning"> </div>
-    <div id="unity-footer">
-      <div id="unity-webgl-logo"></div>
-      <a class="btn btn-primary back_btn" href="{{route('home')}}">一覧へ戻る</a>
-      <!-- <div id="unity-fullscreen-button"></div>
-      <div id="unity-build-title">20221108 KATAMARI</div> -->
+      <div id="unity-warning"> </div>
+      <div id="unity-footer">
+        <div id="unity-webgl-logo"></div>
+        <a class="btn btn-primary back_btn" href="{{route('home')}}">一覧へ戻る</a>
+        <!-- <div id="unity-fullscreen-button"></div>
+        <div id="unity-build-title">20221108 KATAMARI</div> -->
+      </div>
     </div>
   </div>
   <script>

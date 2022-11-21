@@ -1,6 +1,6 @@
 body {
     font-size: 17px;
-    background-color: #dbdbdb;
+    background-color: #eeeeee;
 }
 
 .header {
@@ -19,7 +19,7 @@ body {
     font-size: 2.5rem;
     font-weight: bold;
     text-decoration: none;
-    color: #e2e2e2;
+    color: #ffffff;
 }
 .header-brand:hover:visited {
     color: inherit;
