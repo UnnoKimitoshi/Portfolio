@@ -1,5 +1,6 @@
+
 <IfModule mod_mime.c>
-    # The following lines are required for builds without decompression fallback, compressed with gzip
+# The following lines are required for builds without decompression fallback, compressed with gzip
 RemoveType .gz
 AddEncoding gzip .gz
 AddType application/octet-stream .data.gz
@@ -25,7 +26,6 @@ AddType application/wasm .wasm
 # Uncomment the following line to improve loading performance for brotli-compressed builds with decompression fallback
 # AddEncoding br .unityweb
 </IfModule>
-
 <IfModule mod_rewrite.c>
 
     <IfModule mod_negotiation.c>
