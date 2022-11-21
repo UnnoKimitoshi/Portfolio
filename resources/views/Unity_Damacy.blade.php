@@ -1,7 +1,7 @@
 @extends("layouts.layout")
 @section("title", "Unity WebGL Player | Unity_Damacy")
 @section("css")
-<link rel='stylesheet' href='Unity/TemplateData/style.css'>
+<link rel='stylesheet' href='Unity_Damacy/TemplateData/style.css'>
 @endsection
 @section("content")
 
@@ -54,12 +54,12 @@
       updateBannerVisibility();
     }
 
-    var buildUrl = "Unity/Build";
+    var buildUrl = "Unity_Damacy/Build";
     var loaderUrl = buildUrl + "/Unity_Damacy.loader.js";
     var config = {
-      dataUrl: buildUrl + "/48e5e1dbe2e285f9d96b3cd7b74ca563.data",
-      frameworkUrl: buildUrl + "/ee5e8566e7c67154fecc54348954237b.js",
-      codeUrl: buildUrl + "/4a066e6a924e374aa5984f5ff56e7666.wasm",
+      dataUrl: buildUrl + "/b1be0d311abfb0ce429e0fe749ec04b2.data.gz",
+      frameworkUrl: buildUrl + "/ab1ad9452d759aa248c0b3ea5980f881.js.gz",
+      codeUrl: buildUrl + "/eb017a774ef122f48ed1d11b435b7c38.wasm.gz",
       streamingAssetsUrl: "StreamingAssets",
       companyName: "DefaultCompany",
       productName: "20221108 KATAMARI",
