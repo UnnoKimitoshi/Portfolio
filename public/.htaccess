@@ -1,6 +1,6 @@
 <IfModule mod_mime.c>
     # The following lines are required for builds without decompression fallback, compressed with gzip
-    RemoveT ype .gz
+    RemoveType .gz
     AddEncoding gzip .gz
     AddType application/octet-stream .data.gz
     AddType application/wasm .wasm.gz
