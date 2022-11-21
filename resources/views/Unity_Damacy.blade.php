@@ -1,7 +1,7 @@
 @extends("layouts.layout")
 @section("title", "Unity WebGL Player | Unity_Damacy")
 @section("css")
-<link rel='stylesheet' href='Unity_Damacy/TemplateData/style.css'>
+<link rel='stylesheet' href='Unity/TemplateData/style.css'>
 @endsection
 @section("content")
 
@@ -54,7 +54,7 @@
       updateBannerVisibility();
     }
 
-    var buildUrl = "Unity_Damacy/Build";
+    var buildUrl = "Unity/Build";
     var loaderUrl = buildUrl + "/Unity_Damacy.loader.js";
     var config = {
       dataUrl: buildUrl + "/b1be0d311abfb0ce429e0fe749ec04b2.data.gz",
