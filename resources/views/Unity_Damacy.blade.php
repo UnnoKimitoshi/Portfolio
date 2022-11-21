@@ -59,9 +59,9 @@
     var buildUrl = "Unity/Build";
     var loaderUrl = buildUrl + "/Unity_Damacy.loader.js";
     var config = {
-      dataUrl: buildUrl + "/b1be0d311abfb0ce429e0fe749ec04b2.data.gz",
-      frameworkUrl: buildUrl + "/ab1ad9452d759aa248c0b3ea5980f881.js.gz",
-      codeUrl: buildUrl + "/eb017a774ef122f48ed1d11b435b7c38.wasm.gz",
+      dataUrl: buildUrl + "/Unity_Damacy.data.gz",
+      frameworkUrl: buildUrl + "/Unity_Damacy.framework.js.gz",
+      codeUrl: buildUrl + "/Unity_Damacy.wasm.gz",
       streamingAssetsUrl: "StreamingAssets",
       companyName: "DefaultCompany",
       productName: "20221108 KATAMARI",
