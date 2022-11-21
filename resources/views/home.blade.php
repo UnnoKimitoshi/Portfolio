@@ -69,8 +69,8 @@
         <div class="box-content">
             <div class="box-headline">説明</div>
             <div class="box-text">
-                幅広く活躍するWebアプリの仕組みを勉強したいと思い、作成しました。
-                初めはASP.NETを勉強していたのですが、色々な面でコストが高いと重い
+                幅広く活躍し需要の高いWebアプリを勉強したいと思い、作成しました。
+                初めはASP.NETを勉強していたのですが、色々な面でコストが高いと思い
                 Laravelを学び始めました。<br>
                 &emsp;画像はASP.NETでECサイトのようなものを作成したときのものです。<br>
                 &emsp;このサイトはLaravelで作成しAWS EC2インスタンスにデプロイしています。<br>
