@@ -21,6 +21,7 @@
     <div>
         @yield('content')
     </div>
+    <script src="{{ asset('js/sidebar.js') }}"></script>
 </body>
 
 </html>

@@ -1,6 +1,25 @@
+:root {
+    --sidebar-width: 200px;
+    --sidebar-closed-width: 60px;
+    --body-color: #e4e9f7;
+    --sidebar-color: #ffffffc4;
+    --togle-color: #695cfe;
+    --primary-color-light: #f6f5ff;
+    --text-color: #707070;
+    --btn-color: #fff;
+    --tran-05: all 0.5s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-size: 17px;
-    background-color: #eeeeee;
+    background-color: var(--body-color);
+    height: 100vh;
 }
 
 .header {
@@ -15,6 +34,7 @@ body {
     border-radius: 10px;
     background-color: rgb(68, 164, 219);
 }
+
 .header-brand {
     font-size: 2.5rem;
     font-weight: bold;
@@ -34,10 +54,98 @@ body {
     margin-right: 1.5rem;
 }
 
+/* サイドバー */
+.sidebar {
+    background: var(--sidebar-color);
+    width: var(--sidebar-width);
+    height: 70%;
+    position: fixed;
+    border-radius: 10px;
+    padding: 1rem 0;
+    z-index: 1;
+    transition: var(--tran-05);
+}
+.sidebar.close {
+    width: var(--sidebar-closed-width);
+}
+.sidebar-header {
+    position: relative;
+    display: flex;
+    background: #fff;
+}
+.sidebar-header-image {
+    min-width: var(--sidebar-closed-width);
+    display: flex;
+    justify-content: center;
+}
+.sidebar-header-image img {
+    width: 40px;
+    height: 40px;
+}
+.sidebar-header .text {
+    min-width: calc(var(--sidebar-width) - var(--sidebar-closed-width));
+    transition: var(--tran-05);
+}
+
+.sidebar.close .sidebar-header .text {
+    opacity: 0;
+}
+.sidebar-header .toggle {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%) rotate(180deg);
+    left: 100%;
+    background: var(--togle-color);
+    font-size: 30px;
+    border-radius: 50%;
+    color: var(--btn-color);
+    transition: var(--tran-05);
+}
+.sidebar.close .sidebar-header .toggle {
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.menu-items a {
+    font-size: 2.5rem;
+    font-weight: bold;
+    display: flex;
+    text-decoration: none;
+    margin-top: 1rem;
+    padding: 0.5rem 0;
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    color: var(--text-color);
+    white-space: nowrap;
+}
+.menu-items a:hover {
+    background: var(--togle-color);
+    color: var(--primary-color-light);
+}
+
+.menu .icon {
+    min-width: var(--sidebar-closed-width);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu .text {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    transition: var(--tran-05);
+}
+.sidebar.close .menu .text {
+    opacity: 0;
+}
+
+.content {
+    padding-left: var(--sidebar-closed-width);
+}
 .box {
     background-color: #ffffff;
     margin-bottom: 1.5rem;
-    padding: 1rem 2rem;
+    margin: 1rem 1rem;
     border-radius: 10px;
 }
 .box-title {

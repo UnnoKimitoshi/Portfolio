@@ -1,6 +1,60 @@
 @extends("layouts.layout")
 @section("title", "ポートフォリオ一覧")
+@section("css")
+<link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+@endsection
 @section("content")
+<!-- サイドバー -->
+<div class="sidebar close">
+    <div class="sidebar-header">
+        <div class="sidebar-header-image">
+            <img src="images/tama.png" alt="">
+        </div>
+        <span class="text">該当箇所に移動ます</span>
+        <i class="bx bx-chevron-right toggle"></i>
+    </div>
+    <div class="menu">
+        <div class="menu-items">
+            <a href="#unity_damacy">
+                <div class="icon">
+                    <i class='bx bxl-unity' ></i>
+                </div>
+                <span class="text">Unity魂</span>
+            </a>
+            <a href="#web">
+                <div class="icon">
+                    <i class='bx bxl-html5' ></i> 
+                </div>
+                <span class="text">Web作成</span>
+            </a>
+            <a href="#otaku_database">
+                <div class="icon">
+                <i class='bx bxl-windows' ></i>
+                </div>
+                <span class="text">Otaku Database</span>
+            </a>
+            <a href="#blender">
+                <div class="icon">
+                    <i class='bx bxl-blender'></i>
+                </div>
+                <span class="text">CG制作</span>
+            </a>
+            <a href="#unity">
+                <div class="icon">
+                    <i class='bx bxl-unity' ></i>
+                </div>
+                <span class="text">ゲーム作成</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<!-- コンテンツ -->
+<section class="content">
 <div class="box row">
     <div class="content">
         <div class="box-headline">・まえがき</div>
@@ -10,7 +64,7 @@
         </div>
     </div>
 </div>
-<div class="box row">
+<div id="unity_damacy" class="box row">
     <div class="col-lg-6">
         <div class="box-title">・Unity魂</div>
         <img class="box-image" src="images/UnityDamacy.png" alt="" width="100%">
@@ -52,7 +106,7 @@
     </div>
 </div>
 
-<div class="box row">
+<div id="web" class="box row">
     <div class="col-lg-6">
         <div class="box-title">・Webアプリ作成</div>
         <img class="box-image" src="images/web.jpg" alt="" style="width:100%">
@@ -84,7 +138,7 @@
     </div>
 </div>
 
-<div class="box row">
+<div id="otaku_database" class="box row">
     <div class="col-lg-6">
         <div class="box-title">・Otaku Database（画像右上）</div>
         <img class="box-image" src="images/otakuDatabase.gif" alt="" style="width:100%">
@@ -115,7 +169,7 @@
     </div>
 </div>
 
-<div class="box row">
+<div id="blender" class="box row">
     <div class="col-lg-6">
         <div class="box-title">・BlenderでのCG作成</div>
         <video class="box-video" controls src="videos/CGmatome.mp4" poster="images/CG.png" width="100%"></video>
@@ -140,7 +194,7 @@
     </div>
 </div>
 
-<div class="box row">
+<div id="unity" class="box row">
     <div class="col-lg-6">
         <div class="box-title">Unityでのゲーム作成</div>
         <img class="box-image" src="images/games.png" alt="" style="width:100%">
@@ -167,4 +221,5 @@
         </div>
     </div>
 </div>
+</section>
 @endsection
