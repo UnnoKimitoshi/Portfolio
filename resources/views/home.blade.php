@@ -50,6 +50,15 @@
             </a>
         </div>
     </div>
+    <div class="bottom-content">
+        <div class="mode">
+            <div class="sun-moon">
+                <i class="bx bx-moon icon moon"></i>
+                <!-- <i class="bx bx-sun icon sun"></i> -->
+                <span class="text">Dark Mode</span>
+            </div>
+        </div>
+    </div>
 </div>
 
 
