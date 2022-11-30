@@ -73,6 +73,34 @@
         </div>
     </div>
 </div>
+<div id="web" class="box row">
+    <div class="col-lg-6">
+        <div class="box-title">・webカメラをリサイズするchrome拡張機能（制作中）</div>
+        <img class="box-image" src="images/chrome_extension.jpg" alt="" style="width:100%">
+    </div>
+    <div class="box-body col-lg-6">
+        <div class="box-content">
+            <div class="box-headline">作成日</div>
+            <div class="box-text">2022年12月頃</div>
+        </div>
+        <div class="box-content">
+            <div class="box-headline">使用技術</div>
+            <div class="box-text">javascript</div>
+        </div>
+        <div class="box-content">
+            <div class="box-headline">説明</div>
+            <div class="box-text">
+          
+         
+            </div>
+            <div>
+                <a href="#">
+                    >>ソースコード(github)
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
 <div id="unity_damacy" class="box row">
     <div class="col-lg-6">
         <div class="box-title">・Unity魂</div>
