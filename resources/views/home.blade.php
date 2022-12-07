@@ -18,6 +18,12 @@
     </div>
     <div class="menu">
         <div class="menu-items">
+        <a href="#Webcam_Clipping">
+                <div class="icon">
+                <i class='bx bxl-javascript'></i>
+                </div>
+                <span class="text">Webcam Clipping</span>
+            </a>
             <a href="#unity_damacy">
                 <div class="icon">
                     <i class='bx bxl-unity' ></i>
@@ -73,9 +79,9 @@
         </div>
     </div>
 </div>
-<div id="web" class="box row">
+<div id="Webcam_Clipping" class="box row">
     <div class="col-lg-6">
-        <div class="box-title">・webカメラをリサイズするchrome拡張機能（制作中）</div>
+        <div class="box-title">・webカメラをリサイズするchrome拡張機能</div>
         <img class="box-image" src="images/chrome_extension.jpg" alt="" style="width:100%">
     </div>
     <div class="box-body col-lg-6">
@@ -90,11 +96,12 @@
         <div class="box-content">
             <div class="box-headline">説明</div>
             <div class="box-text">
-          
-         
+            Google Meetにカメラサイズ調整機能がなかったので自作しました。
+            OBS等の外部ソフトを使わずにchromeのみで動作します。<br>
+            <font color="red">&emsp;但し、設定値によってはメモリを大量に消費するので注意が必要です。</font>
             </div>
             <div>
-                <a href="#">
+                <a href="https://github.com/UnnoKimitoshi/Webcam-Clipping">
                     >>ソースコード(github)
                 </a>
             </div>
