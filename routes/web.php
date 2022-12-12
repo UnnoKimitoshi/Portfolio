@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\AuthController;
-
+use App\Http\Controllers\ScoreController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -28,6 +28,8 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('/home', function () {
         return view('home');
     })->name('home');
+    // ランキング表示
+    Route::resource("scores",ScoreController::class);
     Route::get("/Unity_Damacy", function () {
         return view('Unity_Damacy');
     })->name('Unity_Damacy');
