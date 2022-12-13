@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap");
 
 * {
     margin: 0;
@@ -6,6 +6,7 @@
     box-sizing: border-box;
     font-family: "Noto Sans JP", sans-serif;
 }
+
 :root {
     --sidebar-width: 200px;
     --sidebar-closed-width: 60px;
@@ -192,13 +193,12 @@ body.dark {
 }
 .box {
     background-color: #ffffff;
-    margin-bottom: 1.5rem;
-    margin: 1rem 1rem;
+    margin: 2rem 1rem;
     border-radius: 10px;
 }
 .box-title {
-    font-size: 1.7rem;
-    font-weight: bold;
+    font-size: 2rem;
+    font-weight: 800;
 }
 
 .box-body {

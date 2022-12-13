@@ -9,13 +9,7 @@
 @section("content")
 <!-- サイドバー -->
 <div class="sidebar close">
-    <div class="sidebar-header">
-        <div class="sidebar-header-image">
-            <img src="images/tama.png" alt="">
-        </div>
-        <span class="text">該当箇所に移動ます</span>
-        <i class="bx bx-chevron-right toggle"></i>
-    </div>
+   
     <div class="menu">
         <div class="menu-items">
         <a href="#Webcam_Clipping">
@@ -72,7 +66,7 @@
 <section class="content">
 <div class="box row">
     <div class="content">
-        <div class="box-headline">・まえがき</div>
+        <div class="box-headline">まえがき</div>
         <div class="box-text">
             ご覧いただきありがとうございます。<br>
             &emsp;これまでに作成したモノ、勉強したことを逆時系列順でまとめました。
@@ -80,8 +74,8 @@
     </div>
 </div>
 <div id="Webcam_Clipping" class="box row">
+    <div class="box-title">webカメラをリサイズするchrome拡張機能</div>
     <div class="col-lg-6">
-        <div class="box-title">・webカメラをリサイズするchrome拡張機能</div>
         <img class="box-image" src="images/chrome_extension.jpg" alt="" style="width:100%">
     </div>
     <div class="box-body col-lg-6">
@@ -98,6 +92,7 @@
             <div class="box-text">
             Google Meetにカメラサイズ調整機能がなかったので自作しました。
             OBS等の外部ソフトを使わずにchromeのみで動作します。<br>
+            <br>
             <font color="red">&emsp;但し、設定値によってはメモリを大量に消費するので注意が必要です。</font>
             </div>
             <div>
@@ -109,8 +104,8 @@
     </div>
 </div>
 <div id="unity_damacy" class="box row">
+    <div class="box-title">Unity魂</div>
     <div class="col-lg-6">
-        <div class="box-title">・Unity魂</div>
         <img class="box-image" src="images/UnityDamacy.png" alt="" width="100%">
         <video class="box-video" controls src="videos/katamari_demo.mp4" width="100%"></video>
     </div>
@@ -152,8 +147,8 @@
 </div>
 
 <div id="web" class="box row">
+    <div class="box-title">Webアプリ作成</div>
     <div class="col-lg-6">
-        <div class="box-title">・Webアプリ作成</div>
         <img class="box-image" src="images/web.jpg" alt="" style="width:100%">
     </div>
     <div class="box-body col-lg-6">
@@ -184,8 +179,8 @@
 </div>
 
 <div id="otaku_database" class="box row">
+    <div class="box-title">Otaku Database（画像右上）</div>
     <div class="col-lg-6">
-        <div class="box-title">・Otaku Database（画像右上）</div>
         <img class="box-image" src="images/otakuDatabase.gif" alt="" style="width:100%">
     </div>
     <div class="box-body col-lg-6">
@@ -215,8 +210,8 @@
 </div>
 
 <div id="blender" class="box row">
+    <div class="box-title">BlenderでのCG作成</div>
     <div class="col-lg-6">
-        <div class="box-title">・BlenderでのCG作成</div>
         <video class="box-video" controls src="videos/CGmatome.mp4" poster="images/CG.png" width="100%"></video>
     </div>
     <div class="box-body col-lg-6">
@@ -240,8 +235,8 @@
 </div>
 
 <div id="unity" class="box row">
+    <div class="box-title">Unityでのゲーム作成</div>
     <div class="col-lg-6">
-        <div class="box-title">Unityでのゲーム作成</div>
         <img class="box-image" src="images/games.png" alt="" style="width:100%">
     </div>
     <div class="box-body col-lg-6">
